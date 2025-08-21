@@ -249,6 +249,7 @@ jobs:
           mv packages/*.deb ${{ github.workspace }}/ytuhd.deb
         env:
           THEOS: ${{ github.workspace }}/theos
+          SIDELOAD: 1
 
       - name: Build Return-YouTube-Dislikes
         if: ${{ inputs.enable_ryd }}
